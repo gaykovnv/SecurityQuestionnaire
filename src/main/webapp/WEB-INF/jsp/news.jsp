@@ -15,7 +15,49 @@
     <div class="col-ms" align="center">
         <h2>Новости <br> Только для залогинившихся пользователей.</h2>
         <a class="btn btn-primary" href="/">Главная</a>
+        <a class="btn btn-primary" href="/questionnaire">Questionnaire</a>
     </div>
+<%--    <div class="col-ms" align="center">--%>
+<%--        <h3>Questionnaire:</h3>--%>
+<%--        <h4>Select favourite colors from:</h4>--%>
+<%--        <div class="form-check">--%>
+<%--            <input class="form-check-input" type="checkbox" name="redColor" id="exampleRadios4" value="option1" checked>--%>
+<%--            <label class="form-check-label" for="exampleRadios4">--%>
+<%--                Red--%>
+<%--            </label>--%>
+<%--        </div>--%>
+<%--        <div class="form-check">--%>
+<%--            <input class="form-check-input" type="checkbox" name="greenColor" id="exampleRadios5" value="option2">--%>
+<%--            <label class="form-check-label" for="exampleRadios5">--%>
+<%--                Green--%>
+<%--            </label>--%>
+<%--        </div>--%>
+<%--        <div class="form-check">--%>
+<%--            <input class="form-check-input" type="checkbox" name="blueColor" id="exampleRadios6" value="option2">--%>
+<%--            <label class="form-check-label" for="exampleRadios6">--%>
+<%--                Blue--%>
+<%--            </label>--%>
+<%--        </div>--%>
+<%--        <h4>Select only one favourite color from:</h4>--%>
+<%--        <div class="form-check">--%>
+<%--            <input class="form-check-input" type="radio" name="redColor" id="exampleRadios1" value="option1" checked>--%>
+<%--            <label class="form-check-label" for="exampleRadios1">--%>
+<%--                Red--%>
+<%--            </label>--%>
+<%--        </div>--%>
+<%--        <div class="form-check">--%>
+<%--            <input class="form-check-input" type="radio" name="greenColor" id="exampleRadios2" value="option2">--%>
+<%--            <label class="form-check-label" for="exampleRadios2">--%>
+<%--                Green--%>
+<%--            </label>--%>
+<%--        </div>--%>
+<%--        <div class="form-check">--%>
+<%--            <input class="form-check-input" type="radio" name="blueColor" id="exampleRadios3" value="option2">--%>
+<%--            <label class="form-check-label" for="exampleRadios3">--%>
+<%--                Blue--%>
+<%--            </label>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
