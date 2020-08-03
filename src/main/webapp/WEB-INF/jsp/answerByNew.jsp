@@ -16,39 +16,39 @@
     <div class="col-ms" align="center">
         <table class="table">
             <thead class="thead-dark">
-            <th scope="col">ID</th>
-            <th scope="col">UserName</th>
-            <th scope="col">Password</th>
-            <th scope="col">Roles</th>
+            <tr>
+                <th>ID</th>
+                <th>First</th>
+                <th>Second</th>
+                <th>Parameter 1</th>
+                <th>Parameter 2</th>
+                <th>Parameter 3</th>
+                <th>Parameter 4</th>
+                <th>Parameter 5</th>
+                <th>Parameter 6</th>
+                <th>Action</th>
+            </tr>
             </thead>
-            <c:forEach items="${allUsers}" var="user">
+            <c:forEach items="${list}" var="list">
+                <tbody>
                 <tr>
-                    <td>${user.id}</td>
-                    <td>${user.username}</td>
-                    <td>${user.password}</td>
-                    <td>
-                        <c:forEach items="${user.roles}" var="role">${role.name}; </c:forEach>
-                    </td>
-                    <td>
-                        <form action="${pageContext.request.contextPath}/admin" method="post">
-                            <input type="hidden" name="userId" value="${user.id}"/>
-                            <input type="hidden" name="action" value="delete"/>
-                            <button class="btn btn-outline-danger" type="submit">Delete</button>
-                        </form>
-
-                    </td>
-
+                    <td>${list.id}</td>
+                    <td>${list.first}</td>
+                    <td>${list.second}</td>
+                    <td>${list.color1}</td>
+                    <td>${list.color2}</td>
+                    <td>${list.color3}</td>
+                    <td>${list.color4}</td>
+                    <td>${list.color5}</td>
+                    <td>${list.color6}</td>
+                    <td><a class="btn btn-outline-danger" href="/admin/deleteQuestionnaire?id=${list.id}">Delete</a></td>
                 </tr>
+                </tbody>
             </c:forEach>
         </table>
-<<<<<<< HEAD
-        <a class="btn btn-outline-primary" href="/admin/answer">Ответы по анкете</a>
-=======
-        <a class="btn btn-outline-primary" href="/admin/answer">Answer on questionnaire</a>
-        <a class="btn btn-outline-success" href="/admin/editQuestionnaire">Edit Questionnaire</a>
-        <a class="btn btn-outline-info" href="/admin/answerByNew">Answer by new questionnaire</a>
->>>>>>> questionnaire
-        <a class="btn btn-primary" href="/">Главная</a>
+        <a class="btn btn-outline-primary" href="/news">Main</a>
+
+        <a class="btn btn-outline-success" href="/admin">Back</a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
