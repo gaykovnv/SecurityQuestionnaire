@@ -16,33 +16,25 @@
     <div class="col-ms" align="center">
         <table class="table">
             <thead class="thead-dark">
-            <th scope="col">ID</th>
-            <th scope="col">UserName</th>
-            <th scope="col">Password</th>
-            <th scope="col">Roles</th>
-            </thead>
-            <c:forEach items="${allUsers}" var="user">
                 <tr>
-                    <td>${user.id}</td>
-                    <td>${user.username}</td>
-                    <td>${user.password}</td>
-                    <td>
-                        <c:forEach items="${user.roles}" var="role">${role.name}; </c:forEach>
-                    </td>
-                    <td>
-                        <form action="${pageContext.request.contextPath}/admin" method="post">
-                            <input type="hidden" name="userId" value="${user.id}"/>
-                            <input type="hidden" name="action" value="delete"/>
-                            <button class="btn btn-outline-danger" type="submit">Delete</button>
-                        </form>
-
-                    </td>
-
+                    <th>ID</th>
+                    <th>First_quest</th>
+                    <th>Second_quest</th>
+                    <th>Name</th>
                 </tr>
+            </thead>
+            <c:forEach items="${answerTest}" var="test">
+            <tbody>
+                <tr>
+                    <td>${test.id}</td>
+                    <td>${test.firstQuest}</td>
+                    <td>${test.secondQuest}</td>
+                    <td>${test.name}</td>
+                </tr>
+            </tbody>
             </c:forEach>
         </table>
-        <a class="btn btn-outline-primary" href="/admin/answer">Answer on questionnaire</a>
-        <a class="btn btn-primary" href="/">Главная</a>
+        <a class="btn btn-outline-primary" href="/">Main</a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
