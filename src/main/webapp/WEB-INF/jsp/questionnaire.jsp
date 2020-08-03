@@ -15,46 +15,46 @@
 <div class="container">
     <div class="col-ms" align="center">
         <a class="btn btn-primary" href="/">Главная</a>
-         <h3>Questionnaire:</h3>
+         <h3>Анкета:</h3>
         <form action="questionnaire" method="post" ModelAttibute="test">
             <h3><input type="text" name="name"/></h3>
-            <h4>Select favourite colors from:</h4>
+            <h4>Выберите любимые цвета:</h4>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" path="first_quest" name="myColor" id="exampleRadios4" value="red">
-                <label class="form-check-label" for="exampleRadios4">
+                <label class="form-check-label text-danger" for="exampleRadios4">
                     Red
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" path="first_quest" name="myColor" id="exampleRadios5" value="green">
-                <label class="form-check-label" for="exampleRadios5">
+                <label class="form-check-label text-success" for="exampleRadios5">
                     Green
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" path="first_quest" name="myColor" id="exampleRadios6" value="blue">
-                <label class="form-check-label" for="exampleRadios6">
+                <label class="form-check-label text-primary" for="exampleRadios6">
                     Blue
                 </label>
             </div>
-        <h4>Select only one favourite color from:</h4>
+        <h4>Выберите только один любимый цвет:</h4>
 
 
             <div class="form-check form">
                 <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio1" value="red">
-                <label class="form-check-label" for="inlineRadio1">Red</label>
+                <label class="form-check-label text-danger" for="inlineRadio1">Red</label>
             </div>
 
 
             <div class="form-check form">
-                <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio2" value="green"><
-                <label class="form-check-label" for="inlineRadio2">Green</label>
+                <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio2" value="green">
+                <label class="form-check-label text-success" for="inlineRadio2">Green</label>
             </div>
 
 
             <div class="form-check form">
                 <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio3" value="blue">
-                <label class="form-check-label" for="inlineRadio3">Blue</label>
+                <label class="form-check-label text-primary" for="inlineRadio3">Blue</label>
             </div>
 
 

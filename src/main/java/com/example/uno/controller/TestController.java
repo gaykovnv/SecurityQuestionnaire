@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-public class QuestionnaireController {
+public class TestController {
 
     @Autowired
     private TestService testService;

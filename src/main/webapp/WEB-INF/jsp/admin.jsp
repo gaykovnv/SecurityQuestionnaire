@@ -41,7 +41,7 @@
                 </tr>
             </c:forEach>
         </table>
-        <a class="btn btn-outline-primary" href="/admin/answer">Answer on questionnaire</a>
+        <a class="btn btn-outline-primary" href="/admin/answer">Ответы по анкете</a>
         <a class="btn btn-primary" href="/">Главная</a>
     </div>
 </div>

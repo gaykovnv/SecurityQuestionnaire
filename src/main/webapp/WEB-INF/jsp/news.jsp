@@ -15,7 +15,7 @@
     <div class="col-ms" align="center">
         <h2>Новости <br> Только для залогинившихся пользователей.</h2>
         <a class="btn btn-primary" href="/">Главная</a>
-        <a class="btn btn-primary" href="/questionnaire">Questionnaire</a>
+        <a class="btn btn-primary" href="/questionnaire">Анкета</a>
     </div>
 <%--    <div class="col-ms" align="center">--%>
 <%--        <h3>Questionnaire:</h3>--%>
