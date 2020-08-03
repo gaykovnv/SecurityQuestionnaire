@@ -16,51 +16,50 @@
     <div class="col-ms" align="center">
         <a class="btn btn-primary" href="/">Главная</a>
          <h3>Questionnaire:</h3>
-        <form action="questionnaire" method="post">
+        <form action="questionnaire" method="post" ModelAttibute="test">
             <h3><input type="text" name="name"/></h3>
             <h4>Select favourite colors from:</h4>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="redColor" id="exampleRadios4" value="${redColor}" checked>
+                <input class="form-check-input" type="checkbox" path="first_quest" name="myColor" id="exampleRadios4" value="red">
                 <label class="form-check-label" for="exampleRadios4">
                     Red
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="greenColor" id="exampleRadios5" value="${greenColor}">
+                <input class="form-check-input" type="checkbox" path="first_quest" name="myColor" id="exampleRadios5" value="green">
                 <label class="form-check-label" for="exampleRadios5">
                     Green
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="blueColor" id="exampleRadios6" value="${blueColor}">
+                <input class="form-check-input" type="checkbox" path="first_quest" name="myColor" id="exampleRadios6" value="blue">
                 <label class="form-check-label" for="exampleRadios6">
                     Blue
                 </label>
             </div>
+        <h4>Select only one favourite color from:</h4>
 
-                <input class="btn btn-outline-success" type="submit" value="Save"/>
 
+            <div class="form-check form">
+                <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio1" value="red">
+                <label class="form-check-label" for="inlineRadio1">Red</label>
+            </div>
+
+
+            <div class="form-check form">
+                <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio2" value="green"><
+                <label class="form-check-label" for="inlineRadio2">Green</label>
+            </div>
+
+
+            <div class="form-check form">
+                <input class="form-check-input" type="radio" path="second_quest" name="color" id="inlineRadio3" value="blue">
+                <label class="form-check-label" for="inlineRadio3">Blue</label>
+            </div>
+
+
+            <input class="btn btn-outline-success" type="submit" value="Save"/>
         </form>
-<%--            <h4>Select only one favourite color from:</h4>--%>
-<%--            <div class="form-check">--%>
-<%--                <input class="form-check-input" type="radio" name="redColor" id="exampleRadios1" value="option1" checked>--%>
-<%--                <label class="form-check-label" for="exampleRadios1">--%>
-<%--                    Red--%>
-<%--                </label>--%>
-<%--            </div>--%>
-<%--            <div class="form-check">--%>
-<%--                <input class="form-check-input" type="radio" name="greenColor" id="exampleRadios2" value="option2">--%>
-<%--                <label class="form-check-label" for="exampleRadios2">--%>
-<%--                    Green--%>
-<%--                </label>--%>
-<%--            </div>--%>
-<%--            <div class="form-check">--%>
-<%--                <input class="form-check-input" type="radio" name="blueColor" id="exampleRadios3" value="option3">--%>
-<%--                <label class="form-check-label" for="exampleRadios3">--%>
-<%--                    Blue--%>
-<%--                </label>--%>
-<%--            </div>--%>
-
     </div>
 </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
